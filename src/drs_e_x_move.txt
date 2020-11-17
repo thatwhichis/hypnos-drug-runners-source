@@ -1,0 +1,21 @@
+script:Tag:drs_e_move|waitsignal:drs_fu_e_move|QuickScript|
+
+foo:SET CURRENT ENEMY MOVEMENT DIRECTION|
+setvar:drs_e_v,drs_e_#drs_e#_v|
+setvarbyname:drs_e_v,#drs_e_v#|
+
+foo:IF ENEMY DIRECTION 0 RETURN CONTROL TO PLAYER|
+if:compare,#drs_e_v#,=,0|
+setvar:drs_p_inmotion,0|
+
+foo:IF ENEMY DIRECTION NOT 0 SET CURRENT ENEMY GRID POSITION AND CALL DIRECTIONAL MOVEMENT FUNCTION|
+else|
+setvar:drs_e_x_gx,drs_e_#drs_e#_gx|
+setvarbyname:drs_e_x_gx,#drs_e_x_gx#|
+setvar:drs_e_x_gy,drs_e_#drs_e#_gy|
+setvarbyname:drs_e_x_gy,#drs_e_x_gy#|
+Signal:drs_fu_e_#drs_e_v#|
+
+endif|
+
+repeat:999999,0

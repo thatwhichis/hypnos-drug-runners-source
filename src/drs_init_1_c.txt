@@ -1,0 +1,41 @@
+script:QuickScript|
+
+wait:1|
+
+foo:INITIALIZE DIRECTION CONSTANTS|
+setvar:drs_c_up,1|
+setvar:drs_c_right,2|
+setvar:drs_c_down,3|
+setvar:drs_c_left,4|
+
+foo:INITIALIZE ITEM CONSTANTS|
+setvar:drs_c_i_unowned,0|
+setvar:drs_c_i_off,1|
+setvar:drs_c_i_on,2|
+setvar:drs_c_i_boots,1|
+setvar:drs_c_i_charm,2|
+setvar:drs_c_i_charm_w,0.5|
+setvar:drs_c_i_end,3|
+
+foo:INITIALIZE TILE CONSTANTS|
+setvar:drs_c_t_player,1|
+setvar:drs_c_t_p_exit,2|
+setvar:drs_c_t_exit,3|
+setvar:drs_c_t_stone,4|
+setvar:drs_c_t_rock,6|
+setvar:drs_c_t_enemy,5|
+setvar:drs_c_t_item,7|
+setvar:drs_c_t_i_open,8|
+
+foo:INITIALIZE SOUND CONSTANTS|
+setvar:drs_c_a_path,audio\drz_a\snd_|
+setvar:drs_c_a_exit,#drs_c_a_path#1|
+setvar:drs_c_a_death,#drs_c_a_path#2|
+setvar:drs_c_a_move,#drs_c_a_path#3|
+setvar:drs_c_a_getboots,#drs_c_a_path#4|
+setvar:drs_c_a_getcharm,#drs_c_a_path#5|
+setvar:drs_c_a_useboots,#drs_c_a_path#6|
+setvar:drs_c_a_usecharm,#drs_c_a_path#7|
+setvar:drs_c_a_getend,#drs_c_a_path#8|
+
+OpenFile:#drs_s_path#drs_init_2_c_ui.txt

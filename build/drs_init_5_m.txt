@@ -1,0 +1,1 @@
+script:QuickScript|foo:IF MAP VAR DOESN'T EXIST START AT BEGINNING|if:compare,#drs_m_init#,!=,1|setvar:drs_m,0|setvar:drs_m_init,1|setvar:drs_moves,0|endif|setvar:drs_ui_moves,#drs_moves#|OpenFile:#drs_s_path#drs_m_#drs_m#.txt

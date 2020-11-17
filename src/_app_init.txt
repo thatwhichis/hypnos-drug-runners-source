@@ -1,0 +1,34 @@
+2000Update:video/drugrunners-intro.webm,foo|QuickScript|
+
+foo:DISABLE PLAYER CONTROL AND SET INITIAL LOADING FEEDBACK|
+setvar:drs_p_inmotion,1|setvar:drs_ui_level,Loading...|setvar:drs_ui_output,Loading...|
+
+foo:INITIALIZE CONSTANTS TILE WIDTH AND HEIGHT|
+setvar:drs_c_t_width,16|setvar:drs_c_t_height,16|
+
+foo:INITIALIZE CONSTANTS COL AND ROW OFFSET AND COL 1 ROW 1 OFFSET|
+setvar:drs_c_col_off,16|setvar:drs_c_row_off,16|setvar:drs_c_col_1_x,6|setvar:drs_c_row_1_y,22|
+
+foo:INITIALIZE CONSTANT TILE BLACK FOR DISPLAY WHILE LOADING|
+setvar:drs_c_t_black,0|
+
+setvar:drs_c_tex_1_x,104|setvar:drs_c_tex_x_off,50|setvar:drs_c_tex_1_y,22|setvar:drs_c_tex_y_off,10|
+
+setvar:drs_tex_2_x,#drs_c_tex_1_x#|addvar:drs_tex_2_x,#drs_c_tex_x_off#|setvar:drs_tex_2_y,#drs_c_tex_1_y#|addvar:drs_tex_2_y,#drs_c_tex_y_off#|addvar:drs_tex_2_y,#drs_c_tex_y_off#|addvar:drs_tex_2_y,#drs_c_tex_y_off#|setvar:drs_tex_3_y,#drs_tex_2_y#|addvar:drs_tex_3_y,#drs_c_tex_y_off#|setvar:drs_tex_4_y,#drs_tex_3_y#|addvar:drs_tex_4_y,#drs_c_tex_y_off#|addvar:drs_tex_4_y,#drs_c_tex_y_off#|addvar:drs_tex_4_y,#drs_c_tex_y_off#|
+
+setvar:drs_col_2_x,#drs_c_col_1_x#|addvar:drs_col_2_x,#drs_c_col_off#|setvar:drs_col_3_x,#drs_col_2_x#|addvar:drs_col_3_x,#drs_c_col_off#|setvar:drs_col_4_x,#drs_col_3_x#|addvar:drs_col_4_x,#drs_c_col_off#|setvar:drs_col_5_x,#drs_col_4_x#|addvar:drs_col_5_x,#drs_c_col_off#|setvar:drs_col_6_x,#drs_col_5_x#|addvar:drs_col_6_x,#drs_c_col_off#|
+
+setvar:drs_row_2_y,#drs_c_row_1_y#|addvar:drs_row_2_y,#drs_c_row_off#|setvar:drs_row_3_y,#drs_row_2_y#|addvar:drs_row_3_y,#drs_c_row_off#|setvar:drs_row_4_y,#drs_row_3_y#|addvar:drs_row_4_y,#drs_c_row_off#|setvar:drs_row_5_y,#drs_row_4_y#|addvar:drs_row_5_y,#drs_c_row_off#|
+
+foo:INITIALIZE ALL GRID NODE TILE VARIABLES TO BLACK|
+setvar:drs_t_1_1,#drs_c_t_black#|setvar:drs_t_1_2,#drs_c_t_black#|setvar:drs_t_1_3,#drs_c_t_black#|setvar:drs_t_1_4,#drs_c_t_black#|setvar:drs_t_1_5,#drs_c_t_black#|setvar:drs_t_2_1,#drs_c_t_black#|setvar:drs_t_2_2,#drs_c_t_black#|setvar:drs_t_2_3,#drs_c_t_black#|setvar:drs_t_2_4,#drs_c_t_black#|setvar:drs_t_2_5,#drs_c_t_black#|setvar:drs_t_3_1,#drs_c_t_black#|setvar:drs_t_3_2,#drs_c_t_black#|setvar:drs_t_3_3,#drs_c_t_black#|setvar:drs_t_3_4,#drs_c_t_black#|setvar:drs_t_3_5,#drs_c_t_black#|setvar:drs_t_4_1,#drs_c_t_black#|setvar:drs_t_4_2,#drs_c_t_black#|setvar:drs_t_4_3,#drs_c_t_black#|setvar:drs_t_4_4,#drs_c_t_black#|setvar:drs_t_4_5,#drs_c_t_black#|setvar:drs_t_5_1,#drs_c_t_black#|setvar:drs_t_5_2,#drs_c_t_black#|setvar:drs_t_5_3,#drs_c_t_black#|setvar:drs_t_5_4,#drs_c_t_black#|setvar:drs_t_5_5,#drs_c_t_black#|setvar:drs_t_6_1,#drs_c_t_black#|setvar:drs_t_6_2,#drs_c_t_black#|setvar:drs_t_6_3,#drs_c_t_black#|setvar:drs_t_6_4,#drs_c_t_black#|setvar:drs_t_6_5,#drs_c_t_black#|
+
+foo:INITIALIZE UI ELEMENTS TO INITIAL LOADING|
+setvar:drs_c_ui_i_off,-|setvar:drs_ui_i_1,#drs_c_ui_i_off#|setvar:drs_ui_i_2,#drs_c_ui_i_off#|setvar:drs_ui_i_1_eq,#drs_c_ui_i_off#|setvar:drs_ui_i_2_eq,#drs_c_ui_i_off#|setvar:drs_ui_moves,X|
+
+setvar:drs_b_1_status,RES|
+
+RefreshApp:DRSApp|
+
+foo:BEGIN ORDERED INITIALIZATION VIA SCRIPTS|
+setvar:drs_s_path,build\|OpenFile:#drs_s_path#drs_init_1_c.txt
