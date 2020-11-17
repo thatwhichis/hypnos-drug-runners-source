@@ -11,6 +11,7 @@ foo:EXIT SETTINGS|
 setvar:drs_ex_6_2,1_1|setvar:drs_en_6_2,1|setvar:drs_t_6_2,#drs_c_t_exit#|
 
 foo:ITEM SETTINGS|
+
 foo:ENEMY SETTINGS|
 setvar:drs_e_1_gx,4|setvar:drs_e_1_gy,4|setvar:drs_t_4_4,#drs_c_t_enemy#|setvar:drs_e_1_v,#drs_c_up#|
 setvar:drs_e_2_v,0|

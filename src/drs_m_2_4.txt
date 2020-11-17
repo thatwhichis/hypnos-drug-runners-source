@@ -12,6 +12,8 @@ setvar:drs_ex_1_1,1_3|setvar:drs_en_1_1,4|setvar:drs_t_1_1,#drs_c_t_exit#|
 setvar:drs_ex_5_2,3_4|setvar:drs_en_5_2,1|setvar:drs_t_5_2,#drs_c_t_exit#|
 setvar:drs_ex_1_5,2_3|setvar:drs_en_1_5,2|setvar:drs_t_1_5,#drs_c_t_exit#|
 
+foo:ITEM SETTINGS|
+
 foo:ENEMY SETTINGS|
 setvar:drs_e_1_gx,3|setvar:drs_e_1_gy,1|setvar:drs_t_3_1,#drs_c_t_enemy#|setvar:drs_e_1_v,#drs_c_right#|
 setvar:drs_e_2_gx,3|setvar:drs_e_2_gy,2|setvar:drs_t_3_2,#drs_c_t_enemy#|setvar:drs_e_2_v,#drs_c_left#|
