@@ -1,6 +1,6 @@
 # hypnos-drug-runners-source
 
-This 2020 sample application mod was generated to demonstrate the capabilities of 3x IGF nominated [Hypnospace Outlaw](http://www.hypnospace.net/)'s ([Steam](https://store.steampowered.com/app/844590/Hypnospace_Outlaw/)) in-game scripting language. The mod was later integrated into the main game, but operates identically to the original mod.
+This 2020 sample application mod was generated to demonstrate the capabilities of 3x IGF nominated [Hypnospace Outlaw](http://www.hypnospace.net/)'s ([Steam](https://store.steampowered.com/app/844590/Hypnospace_Outlaw/)) in-game scripting language. The original mod was later integrated into the main game, but this source version operates almost identically to the original mod, and can be installed/used from the game's mods directory.
 
 All scipting implemented per Guides publicly available on [Mod.io](https://hypnospace.mod.io/guides).
 
