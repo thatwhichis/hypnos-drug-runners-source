@@ -10,8 +10,8 @@ Some notes:
 
 1. Because image/audio/video files are included with the main game, this "Source" version of the mod references the original files, but script references and varibale names have been changed so that all scripting is indepedent of the integrated version. Variable names reference "drs" rather than "drz."
 
-2. src - For creation purposes I worked out of a src directory in which I parsed text within the files for easier readability.
+2. src - For creation purposes I worked from a src directory in which text files were parsed for easier readability.
 
-3. _twim_build_script.ps1 - A quick PowerShell script to read all files out of the src directory and combine them into single-line formats in the build directory. The _app_init.txt script was manually copied into drs.app script field.
+3. _twim_build_script.ps1 - A quick PowerShell script to read all files out of the src directory and combine them into single-line formats in the build directory. The build/_app_init.txt script was manually copied into the drs.app script field.
 
-4. build - The build directory contains the single-line versions of the scripts from the src diorectory; these are the scripts referenced by the app within Hypnospace Outlaw.
+4. build - The build directory contains the single-line versions of the scripts from the src directory; these are the scripts referenced by the app within Hypnospace Outlaw.
