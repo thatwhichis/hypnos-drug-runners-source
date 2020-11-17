@@ -4,7 +4,7 @@ This 2020 sample application mod was generated to demonstrate the capabilities o
 
 All scipting implemented per Guides publicly available on [Mod.io](https://hypnospace.mod.io/guides).
 
-[![screenshot, video in link](https://github.com/thatwhichis/hypnos-drug-runners-source/blob/master/screenshot.png)](https://www.youtube.com/watch?v=D0tzkYKK0QA)
+[![screenshot, video in link](https://github.com/thatwhichis/hypnos-drug-runners-source/blob/main/screenshot.png)](https://www.youtube.com/watch?v=D0tzkYKK0QA)
 
 Some notes:
 
