@@ -14,28 +14,24 @@ closescript=EndScript:drs_p_move|EndScript:drs_p_up|EndScript:drs_p_right|EndScr
 [button01]
 x=54
 y=117
-y=114
 text=UP
 script=QuickScript|if:compare,#drs_p_inmotion#,=,0|setvar:drs_p_inmotion,1|setvar:drs_p_moves,1|setvar:drs_i_boot_b,0|setvar:drs_p_v,1|Signal:drs_fu_p_move|endif
 
 [button02]
 x=78
 y=140
-y=139
 text=RIGHT
 script=QuickScript|if:compare,#drs_p_inmotion#,=,0|setvar:drs_p_inmotion,1|setvar:drs_p_moves,1|setvar:drs_i_boot_b,0|setvar:drs_p_v,2|Signal:drs_fu_p_move|endif
 
 [button03]
 x=54
 y=163
-y=164
 text=DOWN
 script=QuickScript|if:compare,#drs_p_inmotion#,=,0|setvar:drs_p_inmotion,1|setvar:drs_p_moves,1|setvar:drs_i_boot_b,0|setvar:drs_p_v,3|Signal:drs_fu_p_move|endif
 
 [button04]
 x=30
 y=140
-y=139
 text=LEFT
 script=QuickScript|if:compare,#drs_p_inmotion#,=,0|setvar:drs_p_inmotion,1|setvar:drs_p_moves,1|setvar:drs_i_boot_b,0|setvar:drs_p_v,4|Signal:drs_fu_p_move|endif
 
